@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    
+
+}
+
+    
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+    
+}
+
+.Header{
+    background-color: #2d4c50;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    color:white;
+    font-size: 20px;
+}
+
+#search-input{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button{
+padding: 10px 20px;
+background-color: rgb(2, 22, 22);
+color: white;
+font-size: 18px;
+border: none;
+cursor: pointer;
+}
+
+#blog-container{
+    padding:3rem 0;
+    margin: 60px 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}    
+
+.blog-card{
+    width: 230px;
+    cursor: pointer;
+    border: 1px solid #2d4c50;
+    border-radius: 10px;
+    margin:10px;
+    padding: 1rem;
+}
+
+.blog-card:hover{
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+
+}
+
+.blog-card img{
+    width: 100%;
+    border-radius: 12px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h1{
+    font-size: 1.7rem;
+    color: #2d4c50;
+    text-align: center;
+    padding:1rem;
+
+}
+
+.blog-card h1:hover{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media(max-width:500px){
+    .log{
+    font-size: 1.8rem;
+    }
+
+    #search-input{
+        width: 150px;
+        padding: 5px 5px;
+    }
+
+    .nav{
+        padding: 0 20px;
+    }
+
+    .blog-card{
+        width: 100%;
+    }
+
+}
