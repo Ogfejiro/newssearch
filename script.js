@@ -46,10 +46,9 @@ function displayArticles(articles) {
   blogContainer.innerHTML = "";
 
   if (!articles || articles.length === 0) {
-    blogContainer.textContent = "No news articles found.";
+    blogContainer.textContent = "Loading articles..."; // Show loading message
     return;
   }
-
   articles.forEach((article) => {
     const blogCard = document.createElement("div");
     blogCard.classList.add("blog-card");
@@ -78,10 +77,12 @@ function displayArticles(articles) {
 
 (async () => {
   try {
+    blogContainer.textContent = "Loading articles..."; // Show loading message
     const articles = await fetchData();
     displayArticles(articles);
   } catch (error) {
     console.error("Error fetching news articles:", error);
+    blogContainer.textContent = "An error occurred while fetching news. Please try again later.";
   }
 })();
 
