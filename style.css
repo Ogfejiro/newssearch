@@ -94,22 +94,14 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-@media(max-width:500px){
-    .log{
-    font-size: 1.8rem;
-    }
 
-    #search-input{
-        width: 150px;
-        padding: 5px 5px;
+@media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .nav{
-        padding: 0 20px;
+  
+    #search-input {
+      width: 100%;
     }
-
-    .blog-card{
-        width: 100%;
-    }
-
-}
+  }
